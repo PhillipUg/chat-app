@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MessageApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>MessageApp</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
+<body>
+
+  <div class="ui inverted large menu">
+    <div class="ui container">
+      <a class="item">
+        Home
+      </a>
+      <a class="item">
+        Messages
+      </a>
+      <div class="right menu">
+        <div class="ui dropdown item">
+          Language <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item">English</a>
+            <a class="item">Russian</a>
+            <a class="item">Spanish</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui primary button">Sign Up</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui container">
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>
