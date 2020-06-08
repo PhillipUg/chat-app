@@ -11,29 +11,10 @@
 </head>
 
 <body>
-
-  <div class="ui inverted large menu">
-    <div class="ui container">
-        <%= link_to "Chatroom", root_path, class: 'item' %>
-      <a class="item">
-        Messages
-      </a>
-      <div class="right menu">
-        <div class="ui dropdown item">
-          Language <i class="dropdown icon"></i>
-          <div class="menu">
-            <a class="item">Logout</a>
-            <%= link_to "Login", login_path, class: "item" %>
-            <a class="item">Sign up</a>
-          </div>
-        </div>
-        <div class="item">
-          <div class="ui primary button">Sign Up</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= render "layouts/navigation" %>
   <div class="ui container">
+
+    <%= render "layouts/messages" %>
     <%= yield %>
   </div>
 </body>
