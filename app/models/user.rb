@@ -3,5 +3,5 @@ class User < ApplicationRecord
 
   has_many :messages, dependent: :destroy
 
-  validates :username, presence: true, length: {minimum: 3, maximun: 15}
+  validates :username, presence: true, uniqueness: true, length: {minimum: 3, maximun: 15}
 end
