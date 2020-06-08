@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>MessageApp</title>
+  <%= favicon_link_tag %>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -13,9 +14,7 @@
 
   <div class="ui inverted large menu">
     <div class="ui container">
-      <a class="item">
-        Home
-      </a>
+        <%= link_to "Chatroom", root_path, class: 'item' %>
       <a class="item">
         Messages
       </a>
@@ -23,9 +22,9 @@
         <div class="ui dropdown item">
           Language <i class="dropdown icon"></i>
           <div class="menu">
-            <a class="item">English</a>
-            <a class="item">Russian</a>
-            <a class="item">Spanish</a>
+            <a class="item">Logout</a>
+            <%= link_to "Login", login_path, class: "item" %>
+            <a class="item">Sign up</a>
           </div>
         </div>
         <div class="item">
