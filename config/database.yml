@@ -25,5 +25,5 @@ production:
   encoding: unicode
   database: message-app-production
   pool: 5
-  username: postgres
+  username: phillip
   password: <%= ENV['MESSAGE_APP_DATABASE_PASSWORD'] %>
