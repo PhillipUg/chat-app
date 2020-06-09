@@ -1,24 +1,9 @@
-# README
+# Real-Time Chat App
+A simple real-time chat app built with rails that uses websockets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### How to use
+1. Visit the [Live Demo here](https://message-app-phillipug.herokuapp.com)
+2. Sign up
+3. Type a message and press enter
+Any other person who is logged in will be able to see your message and hopefully reply
