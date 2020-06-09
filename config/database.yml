@@ -26,4 +26,4 @@ production:
   database: message-app-production
   pool: 5
   username: postgres
-  password: cash1234
+  password: <%= ENV['MESSAGE_APP_DATABASE_PASSWORD'] %>
