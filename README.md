@@ -1,4 +1,4 @@
-# chat-app
+# Chat App
 A simple real-time chat app built with rails that uses websockets.
 
 <!--
